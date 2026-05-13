@@ -16,8 +16,6 @@ class CustomerService:
 
     @staticmethod
     def create_user_service(database, customer):
-
-
         new_user = models.Customer(
             id = len(database),
             name = customer.name,
