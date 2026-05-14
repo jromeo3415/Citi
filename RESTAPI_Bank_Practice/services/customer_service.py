@@ -1,9 +1,19 @@
 from models import models
+from repo.repo import CustomerRepo
 
 class CustomerService:
-    @staticmethod
-    def get_all_customers_service(database):
-        return database[0]
+    def __init__(self, repo):
+        self.repo = repo
+
+    def get_all_customers_service(self):
+        collection = self.repo.collection
+        print(collection)
+        customers = []
+        for customer in collection.find():
+            print(customer)
+            customers.append(customer)
+
+        return customers
 
     @staticmethod
     def get_customer_by_id_service(database, id):

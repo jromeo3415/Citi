@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+'''from fastapi import APIRouter, HTTPException
 from repo.repo import db
 from services.account_service import AccountService
 
@@ -23,3 +23,4 @@ def get_account_route(customer_id: int, database = db):
         )
 
     return account
+'''

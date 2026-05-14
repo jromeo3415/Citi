@@ -1,3 +1,4 @@
+'''
 class AccountService:
     @staticmethod
     def get_all_accounts_service(db):
@@ -25,3 +26,4 @@ class AccountService:
 
         else:
             return {"message": "No premium accounts at this time"}
+'''

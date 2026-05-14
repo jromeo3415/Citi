@@ -8,4 +8,4 @@ app = FastAPI()
 app.include_router(customer_router.router, prefix="/api/customers")
 
 #   /api/accounts router
-app.include_router(account_router.router, prefix="/api/accounts")
+# app.include_router(account_router.router, prefix="/api/accounts")
